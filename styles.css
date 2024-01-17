@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    height: 100vh;
+    align-items: stretch;
+    margin: 0px;
+}
+
+.image-sidebar {
+    flex: 1 0 0;
+    /*
+    Setting the sidebar to 0 size and to grow allows it to "shrink" before the
+    form does, by giving the form a non-zero size and a shrink factor.
+    */
+    background-image: url("photo-1516617442634-75371039cb3a.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 33vw;
+    position: relative;
+}
+
+.sidebar-logo-container {
+    height: 10vh;
+    padding: 8px;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.sidebar-logo {
+    height: 100%;
+}
+
+@font-face {
+    font-family: "Norse Bold";
+    src: url("Norse-Bold.otf");
+}
+
+.sidebar-logo-text {
+    font-size: 8vh;
+    color: white;
+    font-family: "Norse Bold";
+}
+
+.image-credit,
+.image-credit a {
+    color: white;
+}
+
+.image-credit {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin-bottom: 8px;
+}
