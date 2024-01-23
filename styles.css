@@ -97,18 +97,36 @@ body {
     display: flex;
     justify-content: flex-start;
     gap: 50px;
+    margin: 24px 0;
 }
 
 #form-title {
     margin: 24px 0px;
 }
 
-.signup-form input {
+input {
     border: 2px solid #E5E7EB;
     border-radius: 8px;
     font-size: 24px;
     padding: 8px;
     display: block;
+
+}
+
+input:focus {
+    outline: 2px solid rgb(0,0,255,0.75);
+    box-shadow: lightslategray 0 4px 8px;
+}
+
+input.error {
+    border: 2px solid red;
+}
+
+#pass-nomatch {
+    color: red;
+    font-size: 16px;
+    text-transform: none;
+    font-weight: normal;
 }
 
 .signup-form label {
@@ -141,3 +159,5 @@ body {
     text-decoration: none;
     font-weight: 700;
 }
+
+
